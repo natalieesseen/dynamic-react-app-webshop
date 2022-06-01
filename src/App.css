@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Merriweather:wght@700&family=Quicksand&display=swap');
+
+:root {
+    --font-body-family: Karla, sans-serif;
+    --font-heading-family: Merriweather, serif;
+    --color-off-white: #faf9f8;
+    --color-off-black: #222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:link {
+    text-decoration: none;
+    color: var(--color-off-black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: .3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:visited {
+    color: var(--color-off-black)
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    background-color: var(--color-off-white);
+    color: var(--color-off-black);
+    font-family: var(--font-body-family);
+}
+
+h1,h2,h3 {
+    font-family: var(--font-heading-family);
+}
+
+h4 {
+    font-family: var(--font-heading-family);
+    margin: 10px auto -10px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    height: 75px;
+}
+
+td {
+    padding: 20px 0px;
 }
